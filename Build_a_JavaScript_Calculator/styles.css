@@ -1,0 +1,62 @@
+body {
+  background: #1e1e1e;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  background: #333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 320px;
+}
+
+.display {
+  background: black;
+  color: lime;
+  font-size: 2rem;
+  text-align: right;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.buttons {
+  display: grid;
+  grid-template-areas:
+    "display display display display"
+    "clear clear divide multiply"
+    "seven eight nine subtract"
+    "four five six  add"
+    "one two three equals"
+    "zero zero decimal equals";
+  gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 4px;
+  background: #555;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #666;
+}
+
+#equals {
+  grid-column: span 2;
+  background: #00aaff;
+}
+
+#clear {
+  background: #ff4444;
+}
